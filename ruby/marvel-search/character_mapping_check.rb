@@ -1,10 +1,10 @@
 require 'mechanize'
 require 'open-uri'
 
-# Return Array of Elasticsearch cluster name
-def elasticsearch_clusters
-  cluster_names = open('https://raw.githubusercontent.com/elastic/elasticsearch/master/core/src/main/resources/config/names.txt') { |f| f.read }
-  cluster_names.split("\n")
+# Return Array of Elasticsearch node name
+def elasticsearch_nodes
+  node_names = open('https://raw.githubusercontent.com/elastic/elasticsearch/master/core/src/main/resources/config/names.txt') { |f| f.read }
+  node_names.split("\n")
 end
 
 # Return Array of Marvel character name
@@ -14,7 +14,7 @@ def marvel_characters
   characters.map { |character| character.text }.to_a
 end
 
-elasticsearch = elasticsearch_clusters
+elasticsearch = elasticsearch_nodes
 marvel = marvel_characters
 
 puts '--- Characters Count'
