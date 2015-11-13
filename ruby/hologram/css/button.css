@@ -1,0 +1,74 @@
+/*doc
+---
+title: Buttons
+name: button
+category: Base CSS
+---
+
+ボタンのスタイルは計6種類あります．
+
+```html_example
+<button type="button" class="btn">Default</button>
+<button type="button" class="btn btn-default">Default</button>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-danger">Danger</button>
+```
+*/
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 0.90;
+}
+
+.btn.btn-default {
+  background-color: #e6e6e6;
+}
+
+.btn.btn-primary {
+  color: #ffffff;
+  background-color: #286090;
+}
+
+.btn.btn-success {
+  color: #ffffff;
+  background-color: #449d44;
+}
+
+.btn.btn-info {
+  color: #ffffff;
+  background-color: #31b0d5;
+}
+
+.btn.btn-warning {
+  color: #ffffff;
+  background-color: #ec971f;
+}
+
+.btn.btn-danger {
+  color: #ffffff;
+  background-color: #c9302c;
+}
