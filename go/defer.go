@@ -5,6 +5,22 @@ import (
 )
 
 func main() {
+	// === Start sample1() ===
+	// 3
+	// 0
+	// === Start sample2() ===
+	// 0
+	// 1
+	// 2
+	// 3
+	// 4
+	// Defer :  4
+	// Defer :  3
+	// Defer :  2
+	// Defer :  1
+	// Defer :  0
+	// === Start sample3() ===
+	// 4
 	sample1()
 	sample2()
 	i := sample3()
