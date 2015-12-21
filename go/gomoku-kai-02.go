@@ -5,7 +5,6 @@ import (
 )
 
 func main() {
-
 	loop := 30
 
 	for i := 1; i <= loop; i++ {
@@ -19,5 +18,4 @@ func main() {
 			fmt.Println(i)
 		}
 	}
-
 }
