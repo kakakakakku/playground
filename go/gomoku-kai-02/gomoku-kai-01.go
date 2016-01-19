@@ -16,7 +16,6 @@ var center = 4
 //   ***
 //    *
 func main() {
-
 	// 上4段
 	for i := 1; i <= 7; i++ {
 		if i%2 == 1 {
