@@ -1,0 +1,25 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify --debug index.js > bundle.js",
+    "build-dist": "NODE_ENV=production browserify index.js | uglifyjs -m > bundle.min.js",
+    "watch": "watchify --debug index.js -o bundle.js"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "react": "^0.14.7",
+    "reactify": "^1.1.1",
+    "uglify-js": "^2.6.1",
+    "watchify": "^3.7.0"
+  }
+}
