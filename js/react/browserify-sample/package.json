@@ -21,5 +21,8 @@
     "reactify": "^1.1.1",
     "uglify-js": "^2.6.1",
     "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "uniq": "^1.0.1"
   }
 }
