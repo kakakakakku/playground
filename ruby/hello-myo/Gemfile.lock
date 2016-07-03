@@ -1,0 +1,24 @@
+GIT
+  remote: git@github.com:uetchy/myo-ruby.git
+  revision: fe45d77b7687f397ffef2bc561252b607bbf3d06
+  specs:
+    myo-ruby (0.2.0)
+      em-websocket-client (~> 0.1.2)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    em-websocket-client (0.1.2)
+      eventmachine
+      websocket
+    eventmachine (1.2.0.1)
+    websocket (1.2.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  myo-ruby!
+
+BUNDLED WITH
+   1.12.5
