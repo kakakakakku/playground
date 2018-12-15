@@ -42,14 +42,14 @@ info(photo)
 
 # Search by keyword
 search_results = Unsplash::Photo.search('mountain', page = 1, per_page = 3)
-search_results.each do |photo|
-  info(photo)
+search_results.each do |p|
+  info(p)
 end
 
 # Search curation ( latest, oldest, popular )
 search_results = Unsplash::Photo.curated(page = 1, per_page = 3, 'popular')
-search_results.each do |photo|
-  info(photo)
+search_results.each do |p|
+  info(p)
 end
 
 # Search random
