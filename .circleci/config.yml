@@ -1,0 +1,15 @@
+version: 2
+
+jobs:
+  rubocop:
+    docker:
+      - image: kakakakakku/rubocop
+    steps:
+      - checkout
+      - run: rubocop ruby/*.rb
+
+workflows:
+  version: 2
+  ci:
+    jobs:
+      - rubocop
