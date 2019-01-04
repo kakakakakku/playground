@@ -39,6 +39,10 @@ print(d.maxlen)
 d.append(6)
 print(d)
 
+# deque([1, 2, 3, 4, 5], maxlen=5)
+d.appendleft(1)
+print(d)
+
 del d
 
 # deque([4, 5, 6], maxlen=3)
@@ -50,12 +54,19 @@ print(d.maxlen)
 del d
 print('\n')
 
+print('----- reverse() -----')
+
+d = deque([1, 2, 3, 4, 5])
+
+# deque([5, 4, 3, 2, 1])
+d.reverse()
+print(d)
+
+del d
+print('\n')
+
 print('----- copy() -----')
 
-# deque([1, 2, 3, 4, 5])
-# deque([1, 2, 3, 4, 5])
-# deque([1, 2, 3, 4, 5, 6])
-# deque([1, 2, 3, 4, 5])
 d1 = deque([1, 2, 3, 4, 5])
 d2 = d1.copy()
 
@@ -84,8 +95,6 @@ print('\n')
 
 print('----- insert() -----')
 
-# deque([1.0, 2.0, 3.0, 4.0, 5.0])
-# deque([1.0, 2.0, 3.0, 3.5, 4.0, 5.0])
 d = deque([1.0, 2.0, 3.0, 4.0, 5.0])
 
 # deque([1.0, 2.0, 3.0, 4.0, 5.0])
