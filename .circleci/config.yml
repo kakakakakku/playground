@@ -3,7 +3,7 @@ version: 2
 jobs:
   rubocop:
     docker:
-      - image: kakakakakku/rubocop
+      - image: kakakakakku/rubocop:v0.62.0
     steps:
       - checkout
       - run: rubocop ruby/*.rb
