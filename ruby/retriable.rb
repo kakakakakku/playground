@@ -4,7 +4,7 @@ require 'retriable'
 attempt = 0
 
 begin
-  Retriable.retriable(base_interval: 1.0, tries: 10) do
+  Retriable.retriable(base_interval: 1.0, tries: 9) do
     now = Time.now
     puts '[処理開始] ' + now.to_s
     attempt += 1
